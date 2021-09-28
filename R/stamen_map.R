@@ -17,7 +17,7 @@ get_data<-function(){
   cat("Please enter a maptype:")
   map_type <<- readline()
 }
-openmap_by_name <-function() {
+openmap_by_name <-function(name,zoom_l,map_type) {
     n_url <- paste0("https://nominatim.openstreetmap.org/search.php?q=",
                    name,
                    "&format=jsonv2")
